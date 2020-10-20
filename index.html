@@ -1,0 +1,66 @@
+<!Doctype html>
+<html>
+<head>
+	<title>LocoBee</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700" rel="stylesheet">
+
+	<script src="https://use.fontawesome.com/939e9dd52c.js"></script>
+
+	
+
+	<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+	<div class="mainDiv" align="right">
+		<h1 id="fireHeading" align="left">LocoBee WebApp</h1>
+		<textarea  id= "mainText" placeholder="Enter text here ..."></textarea>
+		<button id="submitButton" onclick="submitClick()"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+	</div>
+
+	<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+
+	<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-analytics.js"></script>
+
+	<script src="/__/firebase/7.24.0/firebase-app.js"></script>
+
+	<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyAlkv-Vt8Zbqmv6FUA6x1lBeluDILNJTw8",
+    authDomain: "locobee-4825f.firebaseapp.com",
+    databaseURL: "https://locobee-4825f.firebaseio.com",
+    projectId: "locobee-4825f",
+    storageBucket: "locobee-4825f.appspot.com",
+    messagingSenderId: "878332401930",
+    appId: "1:878332401930:web:059e84492c1cefc8f7c2f3",
+    measurementId: "G-G208SPS256"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  
+ </script>
+
+	<script>
+		
+		var admin = require("firebase-admin");
+
+		var serviceAccount = require("path/to/serviceAccountKey.json");
+
+		admin.initializeApp({
+		  credential: admin.credential.cert(serviceAccount),
+		  databaseURL: "https://locobee-4825f.firebaseio.com"
+		});
+		firebase.initializeApp(config);
+
+	</script> 
+
+	<script src="/__/firebase/init.js"></script>
+
+	<script src="index.js"></script>
+
+</body>
+</html>
+
